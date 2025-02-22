@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+</head>
+<body>
+    <template id="menu_template">
+        <div class="menu">
+          <h3 class="menu_title">{{title}}</h3>
+          <ul class="menu_list">
+            {{#each items}}
+            <li class="menu_item">{{this}}</li>
+            {{/each}}
+          </ul>
+          <button type="button" class="menu_button">Натисніть</button>
+      </template> 
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
